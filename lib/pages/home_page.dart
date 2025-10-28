@@ -77,35 +77,35 @@ Future<void> _initData() async {
               ],
             ),
             Expanded(
-  child: movies.isEmpty
-      ? const Center(
-          child: Text(
-            'Belum ada film.\nTekan + untuk menambah.',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Color(0xFF1565C0),
-              fontSize: 16,
-            ),
-          ),
-        )
-      : ListView.builder(
-          padding: const EdgeInsets.all(12),
-          itemCount: movies.length,
-          itemBuilder: (ctx, i) {
-            return GestureDetector(
-              onTap: () async {
-                final result = await Navigator.pushNamed(
-                  context,
-                  DetailPage.routeName,
-                  arguments: movies[i].id,
-                );
-                if (result == true) await refresh();
-              },
-              child: MovieCard(movie: movies[i]),
-            );
-          },
-        ),
-),
+              child: movies.isEmpty
+                  ? const Center(
+                      child: Text(
+                        'Belum ada film.\nTekan + untuk menambah.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color(0xFF1565C0),
+                          fontSize: 16,
+                        ),
+                      ),
+                    )
+                  : ListView.builder(
+                      padding: const EdgeInsets.all(12),
+                      itemCount: movies.length,
+                      itemBuilder: (ctx, i) {
+                        return GestureDetector(
+                          onTap: () async {
+                            final result = await Navigator.pushNamed(
+                              context,
+                              DetailPage.routeName,
+                              arguments: movies[i].id,
+                            );
+                            if (result == true) await refresh();
+                          },
+                          child: MovieCard(movie: movies[i]),
+                        );
+                      },
+                  ),
+              ),
           ],
         ),
       ),
