@@ -23,7 +23,7 @@ Hierarki teks dan elemen visual mengikuti gaya Material Design bawaan Flutter.
 | Teks utama     | Judul & isi teks                 | `#0D47A1`    |
 | Teks sekunder  | Warna teks putih pada latar biru | `#FFFFFF`    |
 
-<img width="250" height="550" alt="Screenshot 2025-10-28 003216" src="https://github.com/user-attachments/assets/1607f27f-8c35-41d9-bb6b-484b2bd2f94e" />
+<img width="100" height="350" alt="Screenshot 2025-10-28 003216" src="https://github.com/user-attachments/assets/1607f27f-8c35-41d9-bb6b-484b2bd2f94e" />
 
 
 
@@ -50,8 +50,8 @@ Hierarki teks dan elemen visual mengikuti gaya Material Design bawaan Flutter.
 - SharedPreferences & LocalStorage (penyimpanan lokal)
 - Material Icons
 - ListView, Card, DropdownButton, dan Form Widget
-<img width="250" height="550" alt="Screenshot 2025-10-28 004822" src="https://github.com/user-attachments/assets/eb5c6790-1299-4b7b-8a13-3d4e1648a138" />
-<img width="250" height="550" alt="Screenshot 2025-10-28 005749" src="https://github.com/user-attachments/assets/b976ba43-e7e2-4d21-bb46-5c1f07d24e4c" />
+<img width="150" height="350" alt="Screenshot 2025-10-28 004822" src="https://github.com/user-attachments/assets/eb5c6790-1299-4b7b-8a13-3d4e1648a138" />
+<img width="150" height="350" alt="Screenshot 2025-10-28 005749" src="https://github.com/user-attachments/assets/b976ba43-e7e2-4d21-bb46-5c1f07d24e4c" />
 
 🧪 Hasil Pengujian
 - ✅ Login dan registrasi akun berjalan normal
@@ -71,6 +71,7 @@ seperti: Pada tahap pengembangan berikutnya, data aplikasi akan diperbarui melal
 **NIM:** 230605110182    
 **Universitas Islam Negeri Maulana Malik Ibrahim Malang**  
 **Semester Ganjil 2025/2026**
+
 
 
 
