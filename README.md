@@ -1,4 +1,5 @@
 🎬 CineLog+
+
 Aplikasi Catatan Film Pribadi Berbasis Flutter
 CineLog+ adalah aplikasi mobile berbasis Flutter yang dirancang untuk membantu pengguna mencatat, menyimpan, dan mengelola daftar film yang telah atau ingin mereka tonton.
 Aplikasi ini mendukung fungsi CRUD penuh (Create, Read, Update, Delete) dan menyimpan data secara lokal menggunakan SharedPreferences dan LocalStorage.
@@ -45,3 +46,4 @@ Hierarki teks dan elemen visual mengikuti gaya Material Design bawaan Flutter.
 
 📁 Lisensi
 Proyek ini dibuat untuk keperluan mata kuliah Mobile Programming dan boleh digunakan untuk pembelajaran pribadi.
+
