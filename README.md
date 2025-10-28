@@ -23,28 +23,7 @@ Hierarki teks dan elemen visual mengikuti gaya Material Design bawaan Flutter.
 | Teks utama     | Judul & isi teks                 | `#0D47A1`    |
 | Teks sekunder  | Warna teks putih pada latar biru | `#FFFFFF`    |
 
-lib/
-├── main.dart
-├── models/
-│   ├── movie_model.dart
-│   └── user_model.dart
-├── repository/
-│   └── data_repository.dart
-├── pages/
-│   ├── splash_page.dart
-│   ├── login_page.dart
-│   ├── signup_page.dart
-│   ├── main_page.dart
-│   ├── home_page.dart
-│   ├── add_edit_page.dart
-│   ├── detail_page.dart
-│   └── explore_page.dart
-└── widgets/
-    └── movie_card.dart
-assets/
-├── movies.json
-├── users.json
-└── posters/
+<img width="344" height="767" alt="Screenshot 2025-10-28 003216" src="https://github.com/user-attachments/assets/1607f27f-8c35-41d9-bb6b-484b2bd2f94e" />
 
 
 🗂️ Struktur Navigasi Aplikasi
@@ -60,15 +39,6 @@ assets/
 | Explore  | `explore_page.dart`  | Film berdasarkan genre               |
 | Favorit  | `favorite_page.dart` | Film dengan rating 5                 |
 | Akun     | `account_page.dart`  | Profil pengguna & logout             |
-
-🚀 Cara Menjalankan Proyek
-- Clone repositori dari GitHub:
-git clone https://github.com/username/cinelog_plus.git
-cd cinelog_plus
-- Install dependencies Flutter:
-flutter pub get
-- Jalankan aplikasi di emulator atau perangkat fisik:
-flutter run
 
 🧠 Teknologi yang Digunakan
 - Flutter SDK
@@ -97,3 +67,4 @@ Program Studi: Teknik Informatika
 Fakultas Sains dan Teknologi
 Universitas Islam Negeri Maulana Malik Ibrahim Malang
 Semester Ganjil 2025/2026
+
