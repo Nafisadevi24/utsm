@@ -241,23 +241,23 @@ class _MainPageState extends State<MainPage> {
                               final movie = featured[i];
                               return GestureDetector(
                                 onTap: () async {
-  final result = await Navigator.of(context).push(PageRouteBuilder(
-    transitionDuration: const Duration(milliseconds: 400),
-    reverseTransitionDuration: const Duration(milliseconds: 300),
-    pageBuilder: (context, animation, secondaryAnimation) => FadeTransition(
-      opacity: animation,
-      child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0.1, 0.05),
-          end: Offset.zero,
-        ).animate(animation),
-        child: const DetailPage(),
-      ),
-    ),
-    settings: RouteSettings(arguments: movie.id),
-  ));
-  if (result == true) refresh();
-},
+                                  final result = await Navigator.of(context).push(PageRouteBuilder(
+                                    transitionDuration: const Duration(milliseconds: 400),
+                                    reverseTransitionDuration: const Duration(milliseconds: 300),
+                                    pageBuilder: (context, animation, secondaryAnimation) => FadeTransition(
+                                      opacity: animation,
+                                      child: SlideTransition(
+                                        position: Tween<Offset>(
+                                          begin: const Offset(0.1, 0.05),
+                                          end: Offset.zero,
+                                        ).animate(animation),
+                                        child: const DetailPage(),
+                                      ),
+                                    ),
+                                    settings: RouteSettings(arguments: movie.id),
+                                  ));
+                                  if (result == true) refresh();
+                                },
                                 child: Container(
                                   margin: const EdgeInsets.symmetric(
                                       horizontal: 8),
@@ -380,10 +380,10 @@ class _MainPageState extends State<MainPage> {
                       ],
                     ),
                   ),
-          ),
-        ],
-      ),
-    );
+              ),
+           ],
+        ),
+      );
   }
 
   // ➕ TAMBAH PAGE
@@ -457,23 +457,22 @@ class _MainPageState extends State<MainPage> {
                   shadowColor: Colors.black26,
                 ),
                 onPressed: () async {
-  final result = await Navigator.of(context).push(PageRouteBuilder(
-    transitionDuration: const Duration(milliseconds: 400),
-    reverseTransitionDuration: const Duration(milliseconds: 300),
-    pageBuilder: (context, animation, secondaryAnimation) => FadeTransition(
-      opacity: animation,
-      child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0.1, 0.05),
-          end: Offset.zero,
-        ).animate(animation),
-        child: const AddEditPage(),
-      ),
-    ),
-  ));
-  if (result == true) refresh();
-},
-
+                  final result = await Navigator.of(context).push(PageRouteBuilder(
+                    transitionDuration: const Duration(milliseconds: 400),
+                    reverseTransitionDuration: const Duration(milliseconds: 300),
+                    pageBuilder: (context, animation, secondaryAnimation) => FadeTransition(
+                      opacity: animation,
+                      child: SlideTransition(
+                        position: Tween<Offset>(
+                          begin: const Offset(0.1, 0.05),
+                          end: Offset.zero,
+                        ).animate(animation),
+                        child: const AddEditPage(),
+                      ),
+                    ),
+                  ));
+                  if (result == true) refresh();
+                },
                 child: const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -620,68 +619,67 @@ class _MainPageState extends State<MainPage> {
                           );
                         },
                       ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      }
+
+      Widget _buildGenreDetailPage(
+          String genre, List<dynamic> movies, List<Color> colors) {
+        return Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: colors,
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          child: Scaffold(
+            backgroundColor: Colors.transparent,
+            appBar: AppBar(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              title: Text(
+                genre,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
+              ),
+              centerTitle: true,
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
+                onPressed: () => Navigator.pop(context),
               ),
             ),
-          ],
+          body: ListView.builder(
+            padding: const EdgeInsets.all(16),
+            itemCount: movies.length,
+            itemBuilder: (ctx, i) {
+              final movie = movies[i];
+              return GestureDetector(
+                onTap: () async {
+                  // buka halaman detail
+                  final result = await Navigator.pushNamed(
+                    context,
+                    DetailPage.routeName,
+                    arguments: movies[i].id,
+                  );
+          
+                  // kalau film diedit atau dihapus, refresh halaman explore
+                  if (result == true) {
+                    setState(() {});
+                    refresh();
+                  }
+                },
+              child: MovieCard(movie: movie),
+            );
+          },
         ),
-      ),
-    );
-  }
-
-  Widget _buildGenreDetailPage(
-      String genre, List<dynamic> movies, List<Color> colors) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: colors,
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          title: Text(
-            genre,
-            style: const TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 24,
-            ),
-          ),
-          centerTitle: true,
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
-            onPressed: () => Navigator.pop(context),
-          ),
-        ),
-        body: ListView.builder(
-  padding: const EdgeInsets.all(16),
-  itemCount: movies.length,
-  itemBuilder: (ctx, i) {
-    final movie = movies[i];
-    return GestureDetector(
-      onTap: () async {
-        // buka halaman detail
-        final result = await Navigator.pushNamed(
-          context,
-          DetailPage.routeName,
-          arguments: movies[i].id,
-        );
-
-        // kalau film diedit atau dihapus, refresh halaman explore
-        if (result == true) {
-          setState(() {});
-          refresh();
-        }
-      },
-      child: MovieCard(movie: movie),
-    );
-  },
-),
-
       ),
     );
   }
@@ -769,13 +767,13 @@ class _MainPageState extends State<MainPage> {
                         itemCount: fav.length,
                         itemBuilder: (ctx, i) => MovieCard(movie: fav[i]),
                       ),
+                    ),
+                  ),
+                ],
               ),
             ),
-          ],
-        ),
-      ),
-    );
-  }
+          );
+        }
 
   // 👤 AKUN PAGE
   Widget _buildAccount() {
