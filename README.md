@@ -26,6 +26,7 @@ Hierarki teks dan elemen visual mengikuti gaya Material Design bawaan Flutter.
 <img width="344" height="767" alt="Screenshot 2025-10-28 003216" src="https://github.com/user-attachments/assets/1607f27f-8c35-41d9-bb6b-484b2bd2f94e" />
 
 
+
 🗂️ Struktur Navigasi Aplikasi
 | Halaman  | File Dart            | Fungsi Utama                         |
 | -------- | -------------------- | ------------------------------------ |
@@ -39,6 +40,9 @@ Hierarki teks dan elemen visual mengikuti gaya Material Design bawaan Flutter.
 | Explore  | `explore_page.dart`  | Film berdasarkan genre               |
 | Favorit  | `favorite_page.dart` | Film dengan rating 5                 |
 | Akun     | `account_page.dart`  | Profil pengguna & logout             |
+
+> **Catatan akun default:** Terdapat akun contoh yang sudah disertakan di `assets/users.json` —  
+> `admin / 12345` dan `nafisa / 12345` (gunakan untuk log in saat pengujian).
 
 🧠 Teknologi yang Digunakan
 - Flutter SDK
@@ -67,4 +71,5 @@ Program Studi: Teknik Informatika
 Fakultas Sains dan Teknologi
 Universitas Islam Negeri Maulana Malik Ibrahim Malang
 Semester Ganjil 2025/2026
+
 
