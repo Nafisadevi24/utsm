@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'repository/data_repository.dart'; // 🟦 tambahkan import ini
+import 'repository/data_repository.dart'; 
 import 'pages/splash_page.dart';
 import 'pages/login_page.dart';
 import 'pages/signup_page.dart';
@@ -9,8 +9,8 @@ import 'pages/add_edit_page.dart';
 import 'pages/detail_page.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized(); // 🟢 wajib agar bisa pakai async sebelum runApp
-  await DataRepository().loadInitialData();  // 🟢 muat data users & movies
+  WidgetsFlutterBinding.ensureInitialized(); 
+  await DataRepository().loadInitialData(); 
   runApp(const CineLogApp());
 }
 
