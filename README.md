@@ -6,10 +6,15 @@ Aplikasi ini mendukung fungsi CRUD penuh (Create, Read, Update, Delete) dan meny
 
 🧩 Fitur Utama
 ✏️ Tambah, ubah, hapus, dan tampilkan data film
+
 🔍 Pencarian dan pengelompokan film berdasarkan genre
+
 ⭐ Daftar favorit otomatis untuk film dengan rating 5 bintang
+
 👤 Login & Signup dengan penyimpanan lokal
+
 📱 Navigasi menggunakan BottomNavigationBar
+
 💾 Data tersimpan permanen di local storage (tidak hilang saat aplikasi ditutup)
 
 Desain Antarmuka (UI Design)
@@ -46,5 +51,6 @@ Hierarki teks dan elemen visual mengikuti gaya Material Design bawaan Flutter.
 
 📁 Lisensi
 Proyek ini dibuat untuk keperluan mata kuliah Mobile Programming dan boleh digunakan untuk pembelajaran pribadi.
+
 
 
