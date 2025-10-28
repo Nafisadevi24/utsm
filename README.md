@@ -64,15 +64,14 @@ Untuk pengembangan selanjutnya, aplikasi dapat ditingkatkan melalui beberapa asp
 seperti: Pada tahap pengembangan berikutnya, data aplikasi akan diperbarui melalui permintaan ke server menggunakan API yang disediakan. Selain itu, dilakukan pula optimalisasi antarmuka dengan penambahan mode gelap (dark mode) serta peningkatan tampilan UI agar lebih menarik dan responsif.  
 
 📁 Lisensi
-Proyek ini dibuat untuk keperluan mata kuliah Mobile Programming dan boleh digunakan untuk pembelajaran pribadi.
+- Proyek ini dibuat untuk keperluan mata kuliah Mobile Programming dan boleh digunakan untuk pembelajaran pribadi.
 
-👩‍💻 Pengembang
-Nama: Nafisa Devi Nur Rusydah
-NIM: 230605110182
-Program Studi: Teknik Informatika
-Fakultas Sains dan Teknologi
-Universitas Islam Negeri Maulana Malik Ibrahim Malang
-Semester Ganjil 2025/2026
+## 👩‍💻 Pengembang
+**Nama:** Nafisa Devi Nur Rusydah  
+**NIM:** 230605110182    
+**Universitas Islam Negeri Maulana Malik Ibrahim Malang**  
+**Semester Ganjil 2025/2026**
+
 
 
 
